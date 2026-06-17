@@ -3,6 +3,8 @@ Project O.A.S.I.S (Omnidirectional Aerial and Surface Intercept System) is a mul
 
 <img width="1600" height="1200" alt="Final Image" src="https://github.com/user-attachments/assets/f387222d-bba0-4804-b560-19f9888f8ef5" />
 
+This project was devloped as part of the course TA212:Manufacturing Processes offered at Indian Institute of Technology Kanpur and was awarded as the best project among 50+ other projects developed in the same course.
+
 ## Physical Pan-Tilt Mechanism
 We were inspired for the pan-tilt mechnaism from the camera pan-tilt mount created by isaac879(https://github.com/isaac879/Pan-Tilt-Mount). We modified it a bit to help it usable for our usecase inorder to fit the arduino sub-system along with the kinetic sub-system. 
 
