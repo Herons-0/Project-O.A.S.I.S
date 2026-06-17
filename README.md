@@ -1,4 +1,7 @@
 # Project-O.A.S.I.S
+
+Note - This project was devloped as part of the course TA212:Manufacturing Processes offered at Indian Institute of Technology Kanpur and was awarded as the best project among 50+ other projects developed in the same course.
+
 Project O.A.S.I.S (Omnidirectional Aerial and Surface Intercept System) is a multi-modal interceptor system for land and air based threats. It uses Ultrasonic as well as LiDAR sensors for detecting and pinpointing the targets and then a Pan-Tilt system to align with the target and engage it with its projectile mechanism.
 
 <img width="1600" height="1200" alt="Final Image" src="https://github.com/user-attachments/assets/f387222d-bba0-4804-b560-19f9888f8ef5" />
