@@ -1,20 +1,35 @@
-# Project-O.A.S.I.S
+# Project O.A.S.I.S
 
-Note - This project was devloped as part of the course TA212:Manufacturing Processes offered at Indian Institute of Technology Kanpur and was awarded as the best project among 50+ other projects developed in the same course.
+**Omnidirectional Aerial and Surface Intercept System**: a multi-modal interceptor for land- and air-based targets. It uses ultrasonic and LiDAR sensors to detect and locate a target, turns a pan-tilt mount to face it, and engages it with a spring-loaded projectile mechanism.
 
-Project O.A.S.I.S (Omnidirectional Aerial and Surface Intercept System) is a multi-modal interceptor system for land and air based threats. It uses Ultrasonic as well as LiDAR sensors for detecting and pinpointing the targets and then a Pan-Tilt system to align with the target and engage it with its projectile mechanism.
+Developed for the course TA212: Manufacturing Processes at IIT Kanpur, where it was awarded best project among 50+ projects in the course.
 
 <img width="1600" height="1200" alt="Final Image" src="https://github.com/user-attachments/assets/f387222d-bba0-4804-b560-19f9888f8ef5" />
 
-This project was devloped as part of the course TA212:Manufacturing Processes offered at Indian Institute of Technology Kanpur and was awarded as the best project among 50+ other projects developed in the same course.
+## Pan-tilt mechanism
 
-## Physical Pan-Tilt Mechanism
-We were inspired for the pan-tilt mechnaism from the camera pan-tilt mount created by isaac879(https://github.com/isaac879/Pan-Tilt-Mount). We modified it a bit to help it usable for our usecase inorder to fit the arduino sub-system along with the kinetic sub-system. 
+The mount is adapted from isaac879's camera [Pan-Tilt Mount](https://github.com/isaac879/Pan-Tilt-Mount). We modified it so the Arduino electronics and the launcher both fit on it.
 
-## Kinetic Mechanism
-We tried multiple kinetic systems including but not limited to Electro-Magnetic Rail Gun, Elastic Potential Gun(Rubber) but finally had to settle with spring loaded shooting mechanism due to resource and time constriant 
+## Kinetic mechanism
 
-## Software Subsystem
-Arduino UNO was used as the main board due to its small size and good enough storage and processing capabilites for our usecase. The full code for the uno is uploaded in one of the Arduino UNO Code file, cyclical sensor ping, sensor placement to avoid ping overlap and memory size constraint have all been optimized for in the code for seamless integration and easy workflow on edge devices such as the uno itself.
+We tried several launch mechanisms, including an electromagnetic rail gun and an elastic (rubber-band) launcher. Within our time and budget, a spring-loaded mechanism worked best.
 
+## Software
 
+An Arduino UNO runs the system: it is small enough to sit on the mount and has enough memory and speed for the job. The sketch drives the two stepper motors and polls three ultrasonic sensors. Ping timing and sensor placement are arranged so the sensors don't interfere with each other, and memory use stays within the UNO's limits.
+
+To upload it:
+
+1. In the Arduino IDE, install the **NewPing** library from the Library Manager.
+2. Open `O.A.S.I.S_Arduino_Code.ino`, select **Arduino Uno** as the board, and upload.
+3. Open the Serial Monitor at 9600 baud to see the system's status messages.
+
+Pin assignments are defined at the top of the sketch.
+
+## Repository contents
+
+| Path | Contents |
+|---|---|
+| `O.A.S.I.S_Arduino_Code.ino` | Final Arduino UNO sketch |
+| `O.A.S.I.S_Overall_Report.pdf` | Full project report |
+| `images/` | Photos of the finished build, and test videos for each of the three sensors |
